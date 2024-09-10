@@ -599,9 +599,12 @@ V_eff2<-opsum[6,1]/V_ob*100
 
 effsum<-c(D_eff,A_eff,V_eff)
 effsum2<-c(D_eff2,A_eff2,V_eff2)
+
+print(opsum)
+print(opsum_EI)
 print(c(D_ob,A_ob,V_ob))
 print(c(effsum,effsum2))
-
+#run above code for table 1 ####
 
 
 
@@ -695,4 +698,7 @@ for (i in 1:5) {
 D_sensitive=round((concl[seq(2,26,by=5),4]),3)
 A_sensitive=round((concl[seq(2,26,by=5),3]),3)
 V_sensitive=round(matrix(c(concl[-1,5]),5,5),3)
-
+print(D_sensitive)
+print(A_sensitive)
+print(V_sensitive)
+#run above code for table 2 ####
